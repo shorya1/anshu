@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+.navigation{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+button{
+    background-color: rgb(255, 119, 0);
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    font-weight: 600;
+    border: none;
+    align-self: flex-start;
+    padding: 10px 20px;
+    transition: 0.3s ease-in-out;
+}
+button:hover{
+    background-color: rgba(255, 166, 0, 0.749);
+    transition: 0.3s ease-in-out;
+}
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 10px;
+}
+.icon{
+    font-size: 24px;
+}
+nav{
+    position: sticky;
+    top: 0;
+    background-color: white;
+    box-shadow: 2px 2px 21px gray;
+    z-index: 50;
+}
+.one{
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 200px;
+}
+.heroabout{
+    display: flex;
+    flex-direction: column;
+}
+.off{
+    background-color: green;
+    align-self: flex-start;
+    padding: 10px 20px;
+    margin-bottom: 20px;
+    font-weight: 800;
+    color: white;
+}
+.heroabout h1{
+    font-size: 80px;
+    margin-bottom: 10px;
+}
+.heroabout p{
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+@media (max-width:786px){
+    .one{
+        display: flex;
+        flex-direction: column;
+    }
+    .hero{
+        width: 40%;
+       display: flex;
+       justify-content: center;
+    }
+    .two{
+        display: flex;
+        flex-direction: column;
+        width: 700px;
+    }
+   .container{
+    max-width: 700px;
+    overflow: hidden;
+   }
+   .imgg img{
+      width: 100%;
+   }
+}
+.two{
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-around;
+    gap: 50px;
+    width: 1000px;
+    margin-top: 100px;
+}
+.two img{
+    width: 70px;
+    height: 80px;
+    justify-content: center;
+    align-items: center;
+}
+.ok{
+    display: flex;
+    gap: 20px;
+    padding: 10px;
+    transition: 0.3s ease-in-out;
+}
+.ok:hover{
+    box-shadow: 2px 3px 5px gray;
+    border-radius: 10px;
+    transition: 0.3s ease-in-out;
+}
+.ko{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.bar{
+    background-color: gray;
+    padding: 2px;
+}
+.menu{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 50px;
+    align-items: center;
+}
+.menu button{
+    align-self: center;
+}
+.item1{
+    grid-area: I1;
+}
+.item2{
+    grid-area: I2;
+}
+.item3{
+    grid-area: I3;
+}
+.item4{
+    grid-area: I4;
+}
+.item5{
+    grid-area: I5;
+}
+.item6{
+    grid-area: I6;
+}
+.item7{
+    grid-area: I7;
+}
+.grid{
+    display: grid;
+    grid-template-areas: "I1 I1 I2 I3"
+                         "I1 I1 I2 I7"
+                          "I4 I5 I6 I7";
+    gap: 15px;                      
+}
+.imgg{
+    border-radius: 10px;
+    overflow: hidden;
+    transition: 0.3s ease-in-out;
+    width: 100%;
+    height: 100%;
+}
+.imgg:hover{
+    transition: 0.3s ease-in-out;
+    transform: scale(1.02);
+}
